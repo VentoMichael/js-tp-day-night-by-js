@@ -4,7 +4,7 @@ let toggleDN = document.querySelector('.tumbler__wrapper');
 let post = document.querySelectorAll('.post');
 let tumbler = document.querySelector('.tumbler');
 
-function toggleFn(event) {
+function toggleFn() {
     if (toggleDN) {
         document.body.classList.toggle('body--night-mode');
         tumbler.classList.toggle('tumbler--night-mode');
@@ -13,6 +13,5 @@ function toggleFn(event) {
         }
     }
 }
-
 
 toggleDN.addEventListener('click', toggleFn);
